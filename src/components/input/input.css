@@ -1,0 +1,62 @@
+.container__input {
+	display: flex;
+	flex-direction: column;
+}
+
+.container__input label {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: var(--smokey-grey);
+	letter-spacing: 3px;
+	order: 1;
+}
+
+.container__input input {
+	box-sizing: border-box;
+	border: 1px solid var(--light-grey);
+	border-radius: 10px;
+	font-size: 1.5rem;
+	padding: 1rem;
+	width: 100%;
+	display: block;
+	order: 2;
+}
+
+input:invalid {
+	border: 1px solid var(--light-red);
+}
+
+input:invalid + label {
+	color: var(--light-red);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	appearance: textfield;
+}
+
+.error-message {
+	order: 3;
+	color: var(--light-red);
+	font-size: 0.625rem;
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+@media(max-width: 400px) {
+	.container__input input {
+			font-size: 1rem;
+		}
+
+	.container__input label {
+		font-size: 0.7rem;
+	}
+}

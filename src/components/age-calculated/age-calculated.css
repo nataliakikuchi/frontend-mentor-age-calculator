@@ -1,0 +1,10 @@
+.age-calculated__result {
+	font-size: 3rem;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.age-calculated__result span:nth-of-type(1) {
+	color: var(--purple);
+	margin-right: 1rem;
+}

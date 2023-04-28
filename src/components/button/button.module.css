@@ -1,0 +1,14 @@
+.button-calculation {
+    background-color: var(--purple);
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 30px;
+}
+
+.button-calculation:disabled {
+    background-color: var(--light-grey);
+    cursor: not-allowed;
+}
